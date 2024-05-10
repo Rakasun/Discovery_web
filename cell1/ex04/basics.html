@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básico</title>
+    <style>
+        body {
+            background-color: #ffcccc;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2em;
+        }
+	.contenedor-contenedor {
+	    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+	}
+    .contenedor-imagenes {
+	    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+	}
+	.contenedor-imagenes img {
+        margin-right: 10px;
+        max-width: 50%;
+        height: auto;
+        margin-bottom: 10px;
+	}
+    .contenedor-imagenes a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    .linea-horizontal {
+            width: 100%;
+            height: 1px;
+            background-color: #333;
+            margin: 20px 0;
+    }
+    .derechos-autor {
+            text-align: right;
+            font-style: italic;
+            font-family: monospace;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>-así de grande-</h1>
+    <div class="contenedor-contenedor">
+        <div class="contenedor-imagenes">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Adidas_logo.png" alt="Imagen 1">
+            <a href="https://www.adidas.es/" target="_blank">Adidas</a>
+        </div>
+        <div class="contenedor-imagenes">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Puma-Logo.png" alt="Imagen 2">
+            <a href="https://eu.puma.com/es/es/home" target="_blank">Puma</a>
+        </div>
+        
+    </div>
+    <div class="linea-horizontal"></div>
+    <div class="derechos-autor">
+        &copy; yfang 2024
+    </div>
+</body>
+</html>
+

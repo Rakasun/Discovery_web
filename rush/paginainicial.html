@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>CV</title>
+	<style>
+		body {
+			background-size: cover;
+ 			background-position: center;
+ 			background-repeat: no-repeat;
+ 			height: 100vh;
+		}
+
+		.oculto {
+ 			display: none;
+		}
+
+		.visible {
+ 			display: block;
+		}
+		.container {
+ 			display: flex;
+ 			flex-direction: column;
+ 			justify-content: center;
+ 			align-items: center;
+ 			min-height: 75vh;
+		}
+		.inicio {
+			display: flex;
+ 			flex-direction: column;
+			justify-content: center;
+ 			align-items: center;
+			background-size: cover;
+ 			background-position: center;
+			background-repeat: no-repeat;
+		}
+		.borde{
+			max-width: 100%;
+			height: auto;
+			border-radius: 20px;
+		}
+		.parrafo {
+			margin-top: 20px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.parrafo2 {
+			margin-top: 550px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 20px;
+			margin-bottom: 500px;
+		}
+
+		.yfang {
+			margin-top: 100px;
+		}
+
+		.frcastil {
+			margin-top: 100px;
+		}
+
+		.enlaces {
+			margin-top: 600px;
+			display: flex;
+ 			flex-direction: row;
+			justify-content: center;
+ 			align-items: center;
+			grid-gap: 50px;
+			margin-bottom: 1000px;
+		}
+	</style>
+</head>
+<body  style="background-image: url('https://i.pinimg.com/736x/59/6b/8f/596b8fed52b2cedb3addf527c150534c.jpg');">
+	<div class="container">
+		<div id="inicio" class="inicio visible">
+			<h1>Selecciona el CV</h1>
+			<div>
+				<button type="button" class="btn btn-primary" onclick="mostrarCV('cv1'), ocultarInicio()">Yfang</button>
+				<button type="button" class="btn btn-secondary" onclick="mostrarCV('cv2'), ocultarInicio()">Frcastil</button>
+			</div>
+		</div>	   
+		<div id="cv1" class="cv oculto">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+				<a class="navbar-brand" href="#" onclick="volverInicio()"><i class="fas fa-home"></i></a>
+				<div class="collapse navbar-collapse">
+				  <ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+					  <a class="nav-link" href="#sec1" onclick="irAMiImagen(); return false;"><i class="fas fa-user"></i></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#sec2" onclick="irAMiDescripcion(); return false;"><i class="far fa-newspaper"></i></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#sec3" onclick="irAMiEnlace(); return false;"></i><i class="fas fa-phone"></i></a>
+					</li>
+				  </ul>
+				</div>
+			</nav>
+			<div class="yfang">
+				<img id="miImagen" src="https://cdn.intra.42.fr/users/7bc817de2df735787017fed3ca91d47d/yfang.png" alt="Descripción de la imagen" class="borde">
+ 				<p class="parrafo">Yanhe Fernando, Estudiante de 42 Málaga.</p>
+				<p id="miDescripcion" class="parrafo2">De momento un nini-nini, ni estudio ni trabajo ni lo intento ni quiero.</p>
+				<div id="miEnlace" class="enlaces">
+					<a href="https://www.linkedin.com/">linkeding</a>
+					<a href="https://github.com/">github</a>
+					<a href="https://web.telegram.org/a/">telegram</a>
+				</div>
+			</div>
+		</div>
+	   
+		<div id="cv2" class="cv oculto">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+				<a class="navbar-brand" href="#" onclick="volverInicio()"><i class="fas fa-home"></i></a>
+				<div class="collapse navbar-collapse">
+				  <ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+					  <a class="nav-link" href="#sec1" onclick="irAMiImagen2(); return false;"><i class="fas fa-user"></i></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#sec2" onclick="irAMiDescripcion2(); return false;"><i class="far fa-newspaper"></i></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#sec3" onclick="irAMiEnlace2(); return false;"></i><i class="fas fa-phone"></i></a>
+					</li>
+				  </ul>
+				</div>
+			</nav>
+			<div class="frcastil">
+				<img id="miImagen2" src="https://cdn.intra.42.fr/users/d50650103c5daef0a44b95de0039eafd/frcastil.png" alt="Descripción de la imagen" class="borde">
+ 				<p class="parrafo">Francisco Jose (Paco Pepe para los amigos), Estudiante de 42 Málaga.</p>
+				<p id="miDescripcion2" class="parrafo2">N de ni se te ocurra ni pensarlo.</p>
+				<div id="miEnlace2" class="enlaces">
+					<a href="https://www.linkedin.com/">linkeding</a>
+					<a href="https://github.com/">github</a>
+					<a href="https://web.telegram.org/a/">telegram</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function mostrarCV(id) {
+  			document.querySelectorAll('.cv').forEach(function(cv) {
+       			cv.classList.remove('visible');
+       			cv.classList.add('oculto');
+  			});
+   			document.getElementById(id).classList.remove('oculto');
+   			document.getElementById(id).classList.add('visible');
+		}
+		function ocultarInicio() {
+			document.getElementById('inicio').style.display = 'none';
+		}
+		function volverInicio() {
+			document.getElementById('inicio').style.display = 'block';
+   			document.getElementById('cv1').classList.remove('visible');
+   			document.getElementById('cv1').classList.add('oculto');
+			document.getElementById('cv2').classList.remove('visible');
+   			document.getElementById('cv2').classList.add('oculto');
+		}
+		function irAMiImagen() {
+ 			document.getElementById('miImagen').scrollIntoView({behavior: 'smooth', block: 'center'});
+		}
+		function irAMiDescripcion() {
+ 			document.getElementById('miDescripcion').scrollIntoView({behavior: 'smooth', block: 'center'});
+		}
+		function irAMiEnlace() {
+ 			document.getElementById('miEnlace').scrollIntoView({behavior: 'smooth', block: 'center'});
+		}
+		function irAMiImagen2() {
+ 			document.getElementById('miImagen2').scrollIntoView({behavior: 'smooth', block: 'center'});
+		}
+		function irAMiDescripcion2() {
+ 			document.getElementById('miDescripcion2').scrollIntoView({behavior: 'smooth', block: 'center'});
+		}
+		function irAMiEnlace2() {
+ 			document.getElementById('miEnlace2').scrollIntoView({behavior: 'smooth', block: 'center'});
+		}
+	</script>
+</body>
+</html>

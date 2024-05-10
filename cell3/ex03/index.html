@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do or not to do</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+    .new {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    #ft_list {
+        width: 20vw;
+        border: 2px solid black;
+        text-align: center;
+    }
+    #ft_list tr {
+        border: 2px solid black;
+    }
+    #ft_list td {
+        border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <button class="new" id="new_task">New</button>
+  <table class="table" id="ft_list"></table>
+  <script src="todo.js"></script>
+</body>
+</html>

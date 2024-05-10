@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Texto y Colores Independientes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 30px;
+            text-align: left;
+			width: 50%;
+			border: 2px solid #000;
+        }
+        .columna1 {
+            background-color: #3498db;
+            color: #000000;
+        }
+        .columna2 {
+            background-color: #e74c3c;
+            color: #000000;
+        }
+		th.columna1, td.columna1 {
+            border-right: 0.5px solid #000000;
+        }
+        th.columna2, td.columna2 {
+            border-left: 0.5px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="columna1">Hola klk</th>
+            <th class="columna2">Pec</th>
+        </tr>
+    </table>
+</body>
+</html>

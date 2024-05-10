@@ -1,0 +1,31 @@
+html, body{
+	margin: 0%;
+}
+
+div.picture {
+	height: 100vh;
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#img1 {
+	background-image: url(https://i.pinimg.com/474x/7f/28/3d/7f283d2555b578ed23090b7bcaa596e9.jpg);
+}
+
+#img2 {
+	background-image: url(https://www.naiz.eus/media/asset_publics/resources/000/666/494/article_main_landscape/1227_cats.jpg);
+}
+
+div.text {
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	top: 50%;
+	position: relative;
+}
+
+div.block {
+	background-color: black;
+	height: 150vh;
+}

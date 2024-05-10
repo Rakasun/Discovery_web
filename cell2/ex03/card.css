@@ -1,0 +1,67 @@
+body {
+	text-align: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+table {
+	width: 360px;
+	border-collapse: collapse;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+	border-radius: 20px;
+	overflow: hidden;
+	font-family: 'Arial', sans-serif;
+}
+
+th, td {
+	padding: 20px;
+	text-align: center;
+	width: 50%;
+}
+
+.borde{
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
+
+.user {
+	padding: 10px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.descripcion {
+	padding: 10px;
+	color: rgb(118, 118, 118);
+}
+
+.lugar {
+	padding: 10px;
+	font-size: 15px;
+}
+
+.logo {
+	padding: 10px;
+}
+
+button {
+	border: none;
+	width: 100%;
+    padding: 10px;
+    font-size: 14px;
+	background-color: black;
+	color: aliceblue;
+	border-radius: 20px;
+	cursor: pointer;
+}

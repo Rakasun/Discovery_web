@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balloon</title>
+	<style>
+		.contenedor {
+			display: grid;
+			place-items: center;
+			height: 100vh;
+		}
+
+		.balloon {
+			width: 200px;
+			height: 200px;
+			border-radius: 200px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<div id="miDiv" class="balloon"></div>
+	</div>
+	<script>
+		let miDiv = document.getElementById('miDiv');
+		let colorActual = 0;
+		let colores = ['red', 'green', 'blue'];
+
+		miDiv.addEventListener('click', function() {
+ 		colorActual = (colorActual + 1) % colores.length;
+ 		miDiv.style.backgroundColor = colores[colorActual];
+
+ 		let nuevoAncho = miDiv.offsetWidth + 10;
+ 		let nuevoAlto = miDiv.offsetHeight + 10;
+ 		if (nuevoAncho > 420 || nuevoAlto > 420) {
+			nuevoAncho = 200;
+			nuevoAlto = 200;
+			}
+	
+			miDiv.style.width = nuevoAncho + 'px';
+			miDiv.style.height = nuevoAlto + 'px';
+		});
+
+		miDiv.addEventListener('mouseout', function() {
+			if (miDiv.offsetWidth === 200 && miDiv.offsetHeight === 200) {
+				return;
+			}
+			miDiv.style.width = (miDiv.offsetWidth - 5) + 'px';
+			miDiv.style.height = (miDiv.offsetHeight - 5) + 'px';
+	
+			if (miDiv.offsetWidth < 200 || miDiv.offsetHeight < 200)
+			{
+				miDiv.style.width = 200 + 'px';
+				miDiv.style.height = 200 + 'px';
+			}
+
+			colorActual--;
+			if (colorActual < 0) {
+			   colorActual = colores.length - 1;
+			}
+			miDiv.style.backgroundColor = colores[colorActual];
+   		});
+	</script>
+</body>
+</html>
